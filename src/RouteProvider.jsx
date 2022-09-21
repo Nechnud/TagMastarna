@@ -6,17 +6,18 @@ import TicketButton from "./components/TicketButton";
 import LoggInbutton from "./components/LoggInbutton";
 import TrafficInformationButton from "./components/TrafficInformationButton";
 import MoreOptionsButton from "./components/MoreOptionsButton";
-
+import Footer from "./components/Footer";
 const RouteProvider = () => {
   return (
     <BrowserRouter>
       <Routes>
         {/* Routes for footer buttons */}
+        <Route element={<Footer />} />
         <Route path="/" element={<HomeButton />} />
         <Route path="/ticket" element={<TicketButton />} />
-        <Route path="/start" element={<LoggInbutton />} />
-        <Route path="/start" element={<TrafficInformationButton />} />
-        <Route path="/start" element={<MoreOptionsButton />} />
+        <Route path="/loggIn" element={<LoggInbutton />} />
+        <Route path="/information" element={<TrafficInformationButton />} />
+        <Route path="/options" element={<MoreOptionsButton />} />
       </Routes>
     </BrowserRouter>
   );

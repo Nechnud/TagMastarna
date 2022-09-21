@@ -1,7 +1,12 @@
 import React from "react";
-
+import Footer from "./Footer";
 const MoreOptionsButton = () => {
-  return <div>MoreOptionsButton</div>;
+  return (
+    <div>
+      More options
+      <Footer />
+    </div>
+  );
 };
 
 export default MoreOptionsButton;

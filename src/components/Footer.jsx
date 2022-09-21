@@ -1,12 +1,30 @@
 import React from "react";
-import HomeButton from "./HomeButton";
-import LoggInbutton from "./LoggInbutton";
-import MoreOptionsButton from "./MoreOptionsButton";
-import TicketButton from "./TicketButton";
-import TrafficInformationButton from "./TrafficInformationButton";
+import {useNavigate} from "react-router";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  const navigate = useNavigate();
+  return (
+    <div className="footerContainer">
+      <button className="homeButton" onClick={() => navigate("/")}>
+        Home
+      </button>
+      <button className="ticketButton" onClick={() => navigate("/ticket")}>
+        Tickets
+      </button>
+      <button className="logginButton" onClick={() => navigate("/loggIn")}>
+        Loggin
+      </button>
+      <button
+        className="trafficInformation"
+        onClick={() => navigate("/information")}
+      >
+        TrafficInformation
+      </button>
+      <button className="moreOptions" onClick={() => navigate("/options")}>
+        MoreOptionsButton
+      </button>
+    </div>
+  );
 };
 
 export default Footer;

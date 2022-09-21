@@ -1,7 +1,12 @@
 import React from "react";
-
+import Footer from "./Footer";
 const LoggInbutton = () => {
-  return <div>LoggInbutton</div>;
+  return (
+    <div>
+      LogginButton
+      <Footer />
+    </div>
+  );
 };
 
 export default LoggInbutton;
